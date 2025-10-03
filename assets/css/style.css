@@ -1,5 +1,65 @@
 @import "reset.css";
 
+.popup {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-white);
+    padding: 2rem;
+    width: 95%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .12);
+}
+
+.btn-croix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-croix h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.popup #btn-js {
+    font-size: 2rem;
+    color: var(--color-black);
+}
+
+.popup p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.popup .icon i{
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.popup form input{
+    width: 100%;
+}
+
+.popup form input[type="email"]{
+    padding: 1rem .5rem;
+    margin-bottom: 1rem;
+}
+
+.popup form input[type="submit"]{
+    background-color: var(--color-red);
+    border: none;
+    padding: 1rem .5rem;
+    color: var(--color-white);
+}
+
 /* HEADER*/
 header {
     display: flex;
@@ -306,6 +366,65 @@ footer div {
 
 
 @media screen and (min-width: 578px) {
+
+    .popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        padding: 5rem;
+        width: 70%;
+    }
+
+    .btn-croix {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn-croix h2{
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+
+    .btn-croix>div{
+        padding: 0.5rem 0.7rem;
+        background-color: var(--color-grey-light);
+    }
+
+    .popup p {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .popup .icon i{
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .popup form input{
+        width: 100%;
+    }
+
+    .popup form input[type="email"]{
+        padding: 1rem .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .popup form input[type="submit"]{
+        background-color: var(--color-red);
+        border: none;
+        padding: 1rem .5rem;
+        color: var(--color-white);
+    }
 
     /*HEADER*/
     header {
