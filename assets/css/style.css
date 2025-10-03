@@ -326,6 +326,10 @@ footer div {
         border-radius: 10px;
     }
 
+    .sections-download a {
+        width: 100%;
+    }
+
     .sections-download h1,
     .sections-download > p {
         display: block;
